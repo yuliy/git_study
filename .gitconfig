@@ -1,0 +1,42 @@
+[user]
+	name = Yuliy Ayvazyan
+	email = yuliy@yandex-team.ru
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[color]
+	interactive = auto
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
+	ci = commit
+	up = remote update
+	st = status
+	sm = submodule
+	dp = diff --patience
+	plog = log --oneline --abbrev-commit --name-status --graph --decorate
+	wdiff = diff --color-words --word-diff-regex='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+	lg1 = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	lg2 = log --graph --oneline --decorate --all
+	lg3 = !git log --oneline | grep
+	lg4 = log -p -1
+	lg5 = "!f() { \
+	        git log --after=\"$(date -j -v-$1d +%Y-%m-%d)\" --oneline; \
+	    }; f"
+	lg6 = log --graph --abbrev-commit --decorate --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"
+	lg7 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = !git lg2
+[pull]
+	rebase = true
+[svn]
+        rmdir = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[push]
+	default = simple
