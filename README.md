@@ -13,7 +13,7 @@
 ## CookBook
 
 ### Как создать ветку?
-```(bash)
+```bash
 git branch mybranch
 git checkout mybranch
 
@@ -22,7 +22,7 @@ git checkout -b mybranch
 ```
 
 ### Как удалить ветку?
-```(bash)
+```bash
 git checkout master
 git pull origin master
 git branch -D mybranch
@@ -48,25 +48,25 @@ A---B---C---D
                     mybranch
 ```
 Для этого, находясь в mybranch,  делаем:
-```(bash)
+```bash
 git pull --rebase origin master
 ```
 
 ### Как поменять историю коммитов в ветке?
 Эта команда будет интерактивно ребейзить последние 3 коммита:
-```(bash)
+```bash
 git rebase -i HEAD^^^
 ```
 
-```HEAD^^^``` - это от какого коммита ребейзим. Можно указать хеш коммита.
+```HEAD^^^``` - это от какого коммита ребейзим. Кол-во "крышечек" - кол-во коммитом назад от указанного. В данном случае - последние 3 коммита от HEAD (включая HEAD). Можно указать хеш коммита.
 
 ### Как "насильно" переместить указатель бранча на определенный коммит?
-```(bash)
+```bash
 git co branch
 git reset --hard <commit>
 ```
 
 ### Как запушить в репу ветку с новой историей?
-```(bash)
+```bash
 git push --force origin <branch>:<branch>
 ```
