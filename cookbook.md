@@ -51,8 +51,42 @@ git rebase -i HEAD^^^
 
 Как именно делать изменения истории, понятно из появляющегося текстового сообщения. Пример:
 ```bash
-TODO
+pick 9ca4005 Update README.md
+pick d3f70f6 Add cookbook.md
+pick 10c2a31 Interactive rebase howto
+
+# Rebase 03bf1b5..10c2a31 onto 03bf1b5 (3 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
 ```
+
+Что здесь важно знать:
+  * Если хочешь удалить коммит из истории - удаляешь соответствующую строчку.
+  * Если хочешь оставить - не трогаешь строчку.
+  * Меняешь порядок строчек - меняется порядок коммитов.
+  * Коммит можно смёржить с коммитом выше. Для этого заменяем pick на fixup (или просто f).
+  * Commit message можно переименовать. Для этого заменяем pick на reword (или просто r). Сам текст при этом можно будет изменить после сохранения этого файла. Откроется отдельно окно.
 
 ## Как "насильно" переместить указатель бранча на определенный коммит?
 ```bash
