@@ -10,6 +10,9 @@
     * [ru](https://git-scm.com/book/ru/v2)
     * там же можно скачать pdf-версию книги
 
+## Мои заметки
+[CookBook](./cookbook.md)
+
 ## CookBook
 
 ### Как создать ветку?
