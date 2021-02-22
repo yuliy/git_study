@@ -12,4 +12,4 @@
 
 ## Мои заметки
 [CookBook](./cookbook.md)
-
+[Git Config](./config.md)
