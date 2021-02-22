@@ -11,5 +11,5 @@
     * там же можно скачать pdf-версию книги
 
 ## Мои заметки
-[CookBook](./cookbook.md)
-[Git Config](./config.md)
+  * [CookBook](./cookbook.md)
+  * [Git Config](./config.md)
