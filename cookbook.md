@@ -1,6 +1,20 @@
 
 # CookBook
 
+## Получение справки
+Есть 3 разных способа получить справку:
+```bash
+git help <verb>
+git <verb> --help
+man git-<verb>
+```
+
+Можно также получить сокращённую справку:
+```bash
+git <verb> -h
+```
+
+
 ## Как создать ветку?
 ```bash
 git branch mybranch
