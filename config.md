@@ -1,7 +1,11 @@
 **toc:**
 <!--ts-->
-  * [Мой .gitconfig](#мой-gitconfig)
-  * [Как просмотреть текущие настройки](#как-просмотреть-текущие-настройки)
+* [Git Config](./config.md#git-config)
+   * [Мой .gitconfig](./config.md#мой-gitconfig)
+   * [Как просмотреть текущие настройки](./config.md#как-просмотреть-текущие-настройки)
+
+<!-- Added by: yuliy.ayvazyan, at: Mon May  3 16:42:12 MSK 2021 -->
+
 <!--te-->
 
 
