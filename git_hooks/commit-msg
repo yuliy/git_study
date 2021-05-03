@@ -24,6 +24,6 @@
 #}
 
 echo "DEBUG: this is commit-msg HOOK"
-echo "The commit message is: '$1'"
+echo "The commit message is: '$($1)'"
 
 exit 0
