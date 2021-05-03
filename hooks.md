@@ -22,5 +22,7 @@
   * **pre-push**
   * **pre-auto-gc**
 
-**Server-side hookds:**
-  * **pre-receive** - 
+**Server-side hooks:**
+  * **pre-receive** - вызывается перед пушем однократно.
+  * **update** - вызывается перед пушем на каждый бранч.
+  * **post-receive** - вызывается в самом конце.
