@@ -1,4 +1,3 @@
-**toc:**
 <!--ts-->
 * [Git Config](./config.md#git-config)
    * [Мой .gitconfig](./config.md#мой-gitconfig)

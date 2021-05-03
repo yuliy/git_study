@@ -1,4 +1,3 @@
-**toc:**
 <!--ts-->
 * [git_study](./README.md#git_study)
    * [Как быстро познакомиться с git](./README.md#как-быстро-познакомиться-с-git)

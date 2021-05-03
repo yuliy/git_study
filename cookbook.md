@@ -1,4 +1,3 @@
-**toc:**
 <!--ts-->
 * [CookBook](./cookbook.md#cookbook)
    * [Получение справки](./cookbook.md#получение-справки)
