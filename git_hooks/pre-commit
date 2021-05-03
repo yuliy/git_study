@@ -2,6 +2,5 @@
 #
 
 echo "DEBUG: this is pre-commit HOOK"
-echo "DEBUG: GIT_TEMPLATE_DIR=${GIT_TEMPLATE_DIR}"
 
 exit 0
