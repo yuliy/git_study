@@ -7,4 +7,4 @@
 #  > chmod a+x gh-md-toc
 #
 
-gh-md-toc --insert --no-backup ./*.md
+gh-md-toc --insert --no-backup --hide-footer ./*.md
