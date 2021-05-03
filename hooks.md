@@ -1,7 +1,9 @@
 # Хуки в Git
 
 ## Полезные ссылки
-  * [git-scm.com: Customizing Git - Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+  * [git-scm.com: 8.3 Customizing Git - Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+  * [git-scm.com: 8.4 Customizing Git - An Example Git-Enforced Policy
+](https://git-scm.com/book/en/v2/Customizing-Git-An-Example-Git-Enforced-Policy#_an_example_git_enforced_policy)
 
 ## Коротко о главном
 
