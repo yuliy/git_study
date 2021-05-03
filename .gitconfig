@@ -4,6 +4,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
+        core = ${GIT_DIR}/../git_hooks
 [color]
 	interactive = auto
 	ui = auto
