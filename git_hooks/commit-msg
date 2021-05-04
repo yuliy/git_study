@@ -5,4 +5,4 @@ msg=$(cat $1)
 echo "The commit message is: ${msg}"
 echo "this is altered commit message" > $1
 
-exit 0
+exit 1
