@@ -155,3 +155,4 @@ git reset <commit-hash>
 ```bash
 git reset HEAD^
 ```
+
